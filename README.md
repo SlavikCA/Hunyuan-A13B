@@ -78,12 +78,12 @@ Note: The following benchmarks are evaluated by TRT-LLM-backend on several **bas
 
 Hunyuan-A13B-Instruct has achieved highly competitive performance across multiple benchmarks, particularly in mathematics, science, agent domains, and more. We compared it with several powerful models, and the results are shown below.
 
-| Topic               |                        Bench                         | OpenAI-o1-1217 | DeepSeek R1 | Qwen3-A22B | Hunyuan-A13B-Instruct |
-|:-------------------:|:----------------------------------------------------:|:-------------:|:------------:|:-----------:|:---------------------:|
-| **Mathematics**     |            AIME 2024<br>AIME 2025<br>MATH            | 74.3<br>79.2<br>96.4 | 79.8<br>70<br>94.9 | 85.7<br>81.5<br>94.0 | 87.3<br>76.8<br>94.3 |
-| **Science**         |            GPQA-Diamond<br>OlympiadBench             | 78<br>83.1 | 71.5<br>82.4 | 71.1<br>85.7 | 71.2<br>82.7 |
+| Topic               |                        Bench                         | OpenAI-o1-1217 | DeepSeek R1 | Qwen3-A22B | Hunyuan-A13B-Instruct | Hunyuan-A13B-Instruct-GPTQ-Int4 |
+|:-------------------:|:----------------------------------------------------:|:-------------:|:------------:|:-----------:|:---------------------:|:---------------------:|
+| **Mathematics**     |            AIME 2024<br>AIME 2025<br>MATH            | 74.3<br>79.2<br>96.4 | 79.8<br>70<br>94.9 | 85.7<br>81.5<br>94.0 | 87.3<br>76.8<br>94.3 | 86.7<br>ㅤ<br> ㅤ|
+| **Science**         |            GPQA-Diamond<br>OlympiadBench             | 78<br>83.1 | 71.5<br>82.4 | 71.1<br>85.7 | 71.2<br>82.7 | <br>84.0 |
 | **Coding**          |  Livecodebench<br>Fullstackbench<br>ArtifactsBench   | 63.9<br>64.6<br>38.6 | 65.9<br>71.6<br>44.6 | 70.7<br>65.6<br>44.6 | 63.9<br>67.8<br>43 |
-| **Reasoning**       |              BBH<br>DROP<br>ZebraLogic               | 80.4<br>90.2<br>81 | 83.7<br>92.2<br>78.7 | 88.9<br>90.3<br>80.3 | 89.1<br>91.1<br>84.7 |
+| **Reasoning**       |              BBH<br>DROP<br>ZebraLogic               | 80.4<br>90.2<br>81 | 83.7<br>92.2<br>78.7 | 88.9<br>90.3<br>80.3 | 89.1<br>91.1<br>84.7 | 87.91<br>91.05<br>ㅤ |
 | **Instruction<br>Following** |                 IF-Eval<br>SysBench                  | 91.8<br>82.5 | 88.3<br>77.7 | 83.4<br>74.2 | 84.7<br>76.1 |
 | **Text<br>Creation**|                LengthCtrl<br>InsCtrl                 | 60.1<br>74.8 | 55.9<br>69 | 53.3<br>73.7 | 55.4<br>71.9 |
 | **NLU**             |               ComplexNLU<br>Word-Task                | 64.7<br>67.1 | 64.5<br>76.3 | 59.8<br>56.4 | 61.2<br>62.9 |
